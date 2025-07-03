@@ -1,0 +1,31 @@
+<?php
+// №1
+// Given a number. Check if it is negative or not. Output this information to the console.
+$num = 4;
+if($num % 2 == 0){
+    echo "Not";
+}else{
+    echo "Negative";
+}
+// №2
+// Given a string, output the length of this string to the console.
+
+$string = "asddsghskldhfjasdkhasd";
+echo mb_strlen($string);
+// №3
+
+// Given a string, print the last character of the string to the console.
+
+// №4
+
+// Given a number, check whether it is even or not.
+
+// №5
+
+// You are given two words. Check that the first letters of these words match.
+
+// №6
+
+// Given a word. Get its last letter. If the word ends with a soft sign, get the penultimate letter.
+
+?>
