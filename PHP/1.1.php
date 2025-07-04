@@ -81,5 +81,10 @@ if(substr($array[0],0,1) === substr($array[1],0,1)){
 // №6
 
 //Given a word. Get its last letter. If the word ends with the letter "e", return the second-to-last letter instead.
-
+$string = "name";
+$getletter = substr($string , mb_strlen($string)-1 , 1);
+if($getletter == 'e' || $getletter == 'E'){
+    $getletter = substr($string , mb_strlen($string)-2 , 1);
+}
+echo $getletter;
 ?>
