@@ -80,6 +80,6 @@ if(substr($array[0],0,1) === substr($array[1],0,1)){
 
 // №6
 
-// Given a word. Get its last letter. If the word ends with a soft sign, get the penultimate letter.
+//Given a word. Get its last letter. If the word ends with the letter "e", return the second-to-last letter instead.
 
 ?>
