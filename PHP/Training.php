@@ -53,9 +53,28 @@ foreach( $number as $key => $num  ){
         echo "odd";
     }
 }
-
 // №5
 // You are given two words. Check that the first letters of these words match.
+$array = ["Blabla","Blala"];
+if($array[0][0] == $array[1][0]){
+    echo "First letters match!";
+} else {
+    echo "First letters do NOT match.";
+}
+//here for
+$firstLetters = [];
+foreach($array as $word){
+    $firstLetters[] = $word[0];
+}
+if(count($firstLetters) === 2 && $firstLetters[0] == $firstLetters[1] ){
+    echo "First letters match!";
+} else {
+    echo "First letters do NOT match.";
+}
+//this simple
+if(substr($array[0],0,1) === substr($array[1],0,1)){
+    echo "First letters match!";
+}
 
 
 
