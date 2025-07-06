@@ -85,9 +85,38 @@ echo $firstElement + $lastElement;
 echo "\n";
 // №4
 // Given a number. Output the number of digits in this number.
+$numbers = 3453452342;
+echo strlen((string)$numbers);
+echo "\n";
+echo count(str_split($numbers));
+echo "\n";
 
+
+$array = str_split($numbers);
+$count = count($array);
+echo $count;
+echo "\n";
+$lastKey = array_key_last($array);
+echo $lastKey;
+echo "\n";
+$len = 0;
+foreach($array as $key => $value){
+    if($key != $lastKey + 1){
+        $len++;
+    }
+}
+echo "$len here";
+echo "\n";
+for($i = 1; $i <= count($array) - 1;$i++){
+    if($lastKey == $i){
+        echo $i+1;
+    }
+    
+}
 // №5
 
 // You are given two numbers. Check that the first digits of these numbers match.
+
+
 
 ?>
