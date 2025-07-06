@@ -84,7 +84,6 @@ echo "\n";
 echo $firstElement + $lastElement;
 echo "\n";
 // №4
-
 // Given a number. Output the number of digits in this number.
 
 // №5
