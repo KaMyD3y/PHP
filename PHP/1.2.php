@@ -50,7 +50,39 @@ foreach ($array as $key => $value){
 
 // №3
 // Given a number, output to the console the sum of the first and last digits of this number.
+$number = 43534;
+$array = str_split($number);
+$lastElement = array_key_last($array);
+$firstElement = array_key_first($array);
+echo $lastElement;
+echo "\n";
+echo $firstElement;
+echo "\n";
+foreach($array as $key => $value){
+    if($key == $firstElement){
+        $first = (int)$value;
+    }elseif ($key == $lastElement){
+        $last = (int)$value;
+    }
+}
+echo $first + $last;
+echo "\n";
 
+$number = 234234;
+$string = strval($number);
+$stringOther = (string)$number;
+echo $string;
+echo "\n";
+echo $stringOther;
+echo "\n";
+$firstElement = mb_substr($string,0,1);
+echo $firstElement;
+echo "\n";
+$lastElement = mb_substr($string,-1,1);
+echo $lastElement;
+echo "\n";
+echo $firstElement + $lastElement;
+echo "\n";
 // №4
 
 // Given a number. Output the number of digits in this number.
