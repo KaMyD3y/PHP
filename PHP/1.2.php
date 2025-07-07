@@ -117,6 +117,52 @@ for($i = 1; $i <= count($array) - 1;$i++){
 
 // You are given two numbers. Check that the first digits of these numbers match.
 
+$number1 = 34;
+$number2 = 35;
+$string = strval($number1);
+$string1 = strval($number2);
+echo $string;
+echo "\n";
+echo $string1;
+echo "\n";
+echo mb_substr($string,0,-1);
+echo "\n";
+echo mb_substr($string1,0,-1);
+echo "\n";
+if(mb_substr($string,0,1) == mb_substr($string1, 0 ,1)){
+    echo "Egual";
+    echo "\n";
+}
+$number1 = 34;
+$number2 = 35;
+$array = str_split($number1);
+$array1 = str_split($number2);
+foreach($array as $numbers){
+    echo $numbers;
+    echo "\n";
+}
+foreach($array1 as $numbers){
+    echo $numbers;
+    echo "\n";
+}
+if($array[0] == $array1[0]){
+    echo "Egual";
+    echo "\n";
+}
+$array = [34,35];
+$firstDigit = [];
+foreach($array as $key => $value){
+    $firstDigit[] = str_split($value)[0];
+}
+foreach($firstDigit as $numbers){
+    echo $numbers;
+    echo "\n";
+}
+echo "\n";
+if($firstDigit[0] == $firstDigit[1]){
+    echo "egual";
+}
+
 
 
 ?>
